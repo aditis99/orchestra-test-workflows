@@ -1,8 +1,11 @@
 import json
+import sys
 
 def main():
-    with open("output.json", "r") as f:
-        data = json.load(f)
+    # Get input passed as argument
+    input_data = sys.argv[1]
+
+    data = json.loads(input_data)
 
     print("Received from Task 1:", data)
     print("Number * 2 =", data["number"] * 2)
