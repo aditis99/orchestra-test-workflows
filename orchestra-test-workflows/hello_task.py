@@ -1,5 +1,5 @@
 def main():
-    return {
-         "message": "Hello from Orchestra!",
-        "status": "success"
-    }
+    print("Hello Orchestra")
+
+if __name__ == "__main__":
+    main()
